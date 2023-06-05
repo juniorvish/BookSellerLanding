@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookSellerLanding</title>
+    <link rel="stylesheet" href="css/tailwind.css">
+</head>
+<body class="bg-gray-100">
+    <header class="bg-blue-500 text-white p-4">
+        <h1 class="text-xl">BookSellerLanding</h1>
+    </header>
+    <main class="container mx-auto p-4">
+        <div class="flex justify-center">
+            <input id="searchInput" type="text" class="border-2 border-gray-300 p-2 rounded-lg w-1/2" placeholder="Search for books...">
+            <button id="searchButton" class="bg-blue-500 text-white p-2 rounded-lg ml-2" onclick="searchBooks()">Search</button>
+        </div>
+        <div id="bookList" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-4">
+        </div>
+    </main>
+    <script src="js/main.js"></script>
+</body>
+</html>
